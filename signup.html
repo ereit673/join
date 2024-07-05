@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body onload="renderUsers()">
+    <div class="header">
+        <img class="logoLogin" src="./img/login/Capa 2.svg" alt="">
+    </div>
+    <div class="signupSectionDiv">
+        <div class="signupSection">
+            <div class="headlineSectionDiv">
+                <img class="arrow" src="./img/register/arrow-left-line.svg" alt="" onclick="openLoginPage()">
+                <div class="headlineSection">
+                    <div class="headlineSignup">Sign up</div>
+                    <div class="borderSignup"></div>
+                </div>
+            </div>
+            <form class="form" onsubmit="addUser();return false;">
+                <div class="inputFields">
+                        <div class="inputContainer"><input autocomplete="off" onfocus="resetOutline('name')"
+                            id="name" minlength="3"
+                            class="input" type="text" placeholder="Name"><img class="inputSmallIcon" src="./img/register/person.svg"></div>
+                    <div class="messagebox" id="messageboxName"></div>
+                        <div class="inputContainer"><input autocomplete="off" onfocus="resetOutline('email')"
+                            id="email" 
+                            class="input" type="email" placeholder="Email"><img class="inputSmallIcon" src="./img/login/mail.svg"></div>
+                    <div class="messagebox" id="messageboxEmail"></div>
+                    <div class="inputContainer"><input autocomplete="off" onfocus="resetOutline('password')"
+                            onfocus="changeImage()" id="password" minlength="3"
+                            class="input" type="password" placeholder="Password"><img id="passwordimage"
+                            onclick="changeEye()" class="inputSmallIcon" src="./img/login/lock.svg"></div>
+                    <div class="messagebox" id="messageboxPassword"></div>
+                    <div class="inputContainer"><input autocomplete="off" onfocus="resetOutline('confirmpassword')"
+                            onfocus="changeImageAtConfirmPassword()" id="confirmpassword" 
+                            minlength="3" class="input" type="password" placeholder="Confirm Password"><img
+                            id="passwordimageConfirmed" onclick="changeEyeAtConfirmPassword()" class="inputSmallIcon"
+                            src="./img/login/lock.svg"></div>
+                    <div class="messagebox" id="messageboxConfirmpassword"></div>
+                </div>
+                <div>
+                    <div class="accept">
+                        <input onclick="checkPolicy()" type="checkbox" class="checkbox" id="checkbox">
+                        <span>I accept the</span><span class="policyTypo">Privacy policy</span>
+                    </div>
+                    <div class="messageboxDiv">
+                        <div class="messageboxSmall" id="messageboxPolicy"></div>
+                    </div>
+                </div>
+                <div class="signupButtonDiv">
+                    <button type="submit" class="buttonSignup">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="policies">
+            <span class="privacyPolicy" onclick="openPrivacyPolicyPage()">Privacy Policy</span>
+            <span class="legalNotice" onclick="openLegalNoticePage()">Legal notice</span>
+        </div>
+    </div>
+    <div id="successBackgroud" class="successBackgroundHide">
+        <div class="successButtonDiv">
+            <button id="successButton" class="successButtonHide">You Signed Up successfully</button>
+        </div>
+    </div>
+    <script src="./javascript/storage.js"></script>
+    <script src="./javascript/signup.js"></script>
+
+
+</body>
+</html>

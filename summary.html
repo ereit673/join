@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="./css/summary.css">
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body onload="initSummary()">
+    <header id="header">
+    </header>
+    <div id="smallMenu" class="smallMenu noDisplay">
+    </div>
+    <nav id="navbar">
+    </nav>
+
+    <div id="smallNav" class="smallNav">
+    </div>
+    <div id="greetingPage" class="greetingContainer">
+        <div id="greetingMessageSmallScreen" class="greetingMessageSmallScreen"></div>
+        <div id="greetingNameSmallScreen" class="greetingNameSmallScreen"></div>
+    </div>
+    <main class="summaryMain" id="summaryMain">
+        <div class="summaryPageHeading">
+            <h1>Join 360</h1>
+            <div class="headingBorder"></div>
+            <h2>Key Metrics at a Glance</h2>
+        </div>
+        <div class="summaryPageContent">
+            <div class="summaryPageTasksContainer">
+                <div class="summaryPageTasksRow tasksRowTop">
+                    <div onclick="openBoard()" class="summaryToDosContainer summaryBoxes">
+                        <img class="toDoIcon" src="./img/summary/pen.svg" alt="">
+                        <div class="summaryToDosContainerText">
+                            <div id="summaryToDos" class="summaryToDosNumber"></div>
+                            <div class="summaryTextDescription">To-do</div>
+                        </div>
+                    </div>
+                    <div onclick="openBoard()" class="summaryToDosContainer summaryBoxes">
+                        <img class="toDoIcon" src="./img/summary/tick.svg" alt="">
+                        <div class="summaryToDosContainerText">
+                            <div id="summaryDone" class="summaryToDosNumber"></div>
+                            <div class="summaryTextDescription">Done</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summaryPageTasksRow">
+                    <div onclick="openBoard()" class="summaryUrgentToDos summaryBoxes">
+                        <div class="summaryUrgentToDosLeft">
+                            <div><img class="urgentToDoIcon" src="./img/summary/urgent.svg" alt=""></div>
+                            <div class="summaryToDosContainerText">
+                                <div id="summaryUrgentTasks" class="summaryToDosNumber"></div>
+                                <div class="summaryTextDescription urgentText">Urgent</div>
+                            </div>
+                        </div>
+                        <div class="urgentToDosSeparation"></div>
+                        <div class="summaryUrgentToDosRight">
+                            <div id="summaryUrgentDueDate" class="urgentToDoDate">October 16, 2022</div>
+                            <div class="urgentToDoInfo">Upcoming Deadline</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summaryPageTasksRow tasksRowBottom">
+                    <div onclick="openBoard()" class="summaryBoxes summaryTasksBox">
+                        <div id="summaryTasksInBoard" class="summaryToDosNumber"></div>
+                        <div class="summaryTextDescription">Tasks in<br>Board</div>
+                    </div>
+                    <div onclick="openBoard()" class="summaryBoxes summaryTasksBox">
+                        <div id="summaryTasksInProgress" class="summaryToDosNumber"></div>
+                        <div class="summaryTextDescription">Tasks in<br>Progress</div>
+                    </div>
+                    <div onclick="openBoard()" class="summaryBoxes summaryTasksBox">
+                        <div id="summaryAwaitingFeedback" class="summaryToDosNumber"></div>
+                        <div class="summaryTextDescription">Awaiting<br>Feedback</div>
+                    </div>
+                </div>
+            </div>
+            <div class="summaryPageGreeting">
+                <div id="greetingMessageText" class="greetingMessage"></div>
+                <div id="greetingName" class="greetingName"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./javascript/board.js"></script>
+    <script src="./javascript/summary.js"></script>
+    <script src="./javascript/header.js"></script>
+    <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/signup.js"></script>
+    <script src="./javascript/login.js"></script>
+    <script src="./javascript/storage.js"></script>
+    <script src="./javascript/templatesHTML.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logoLogin {
+    height: 122px;
+    width: 100px;
+    margin-top: 80px;
+    margin-left: 77px
+}
+
+.form {
+    padding: 32px 88px 48px 88px;
+}
+
+.signupSectionDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 122px;
+}
+
+.signupSection {
+    width: 598px;
+    height: 630px;
+    border-radius: 30px;
+    gap: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 3px #0000000A;
+    position: relative;
+}
+
+.headlineSectionDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 48px;
+    gap: 12px;
+}
+
+.headlineSection {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 422px;
+}
+
+.headlineSignup {
+    width: 315px;
+    height: 73px;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.arrow {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 64px;
+    left: 48px;
+}
+
+.arrow:hover {
+    height: 35px;
+    width: 35px;
+    background-color: #F6F7F8;
+    border-radius: 50%;
+}
+
+.borderSignup {
+    width: 150px;
+    height: 3px;
+    background-color: #29ABE2;
+}
+
+.inputFields {
+    width: 422px;
+    height: 152px;
+    gap: 32px;
+}
+
+.input {
+    width: 422px;
+    height: 48px;
+    padding: 12px 21px 12px 21px;
+    border-radius: 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 1px solid #29ABE2;
+}
+
+.inputEmpty {
+    outline: 1px solid red;
+}
+
+::placeholder {
+    color: #D1D1D1;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+
+.inputSmallIcon {
+    margin-left: -36px;
+    cursor: pointer;
+}
+
+.accept {
+    height: 24px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 165px;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('./../img/login/unchecked.svg') 0 0 no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]:hover {
+    background-color: #e5ebf2;
+}
+
+input[type=checkbox]:checked {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('/img/login/checked.svg') 0 0 no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.policyTypo {
+    color: #29ABE2;
+    cursor: pointer;
+}
+
+.policyTypo:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.signupButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.buttonSignup {
+    width: 126px;
+    height: 55px;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 15px 24px 15px 24px;
+    background: #2A3647;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttonSignup:hover {
+    background-color: #29ABE2;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.messagebox {
+    color: red;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    display: block;
+    z-index: 100;
+    width: 100%;
+    height: 10px;
+    padding-left: 5px;
+}
+
+.messageboxSmall {
+    color: red;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 100;
+    height: 10px;
+}
+
+.messageboxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.policies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 50%;
+    margin-bottom: 99px;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A8A8A8;
+}
+
+.privacyPolicy {
+    cursor: pointer;
+}
+
+.legalNotice {
+    cursor: pointer;
+}
+
+.privacyPolicy:hover {
+    color: #29ABE2;
+    font-weight: 700;
+}
+
+.legalNotice:hover {
+    color: #29ABE2;
+    font-weight: 700;
+}
+
+.successButtonHide {
+    display: none;
+}
+
+.successBackgroundShow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(168, 168, 168, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation-name: background-animation;
+    animation-fill-mode: inherit;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+.successBackgroundHide {
+    display: none;
+}
+
+.successButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    animation-name: logo-animation;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+.successButtonShow {
+    width: 312px;
+    height: 74px;
+    border: none;
+    box-shadow: 0px 0px 4px 0px #0000001A;
+    color: white;
+    background-color: #2A3647;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes logo-animation {
+    from {
+        margin-bottom: -200%;
+    }
+
+    to {
+        margin-bottom: 0%;
+    }
+}
+
+@keyframes background-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .signupSectionDiv {
+        margin-top: 63.5px;
+    }
+}
+
+@media (max-width: 620px) {
+    body {
+        margin: 0px;
+    }
+
+    .signupSectionDiv {
+        margin-top: 50.47px;
+        margin-bottom: 108.5px;
+    }
+
+    .logoLogin {
+        height: 78px;
+        width: 64px;
+        margin-top: 37px;
+        margin-left: 38px;
+    }
+
+    .signupSection {
+        width: 90%;
+        height: 595px;
+        padding: 32px 16px 32px 16px;
+    }
+
+    .input {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .inputFields {
+        width: 100%;
+        height: 296px;
+        gap: 24px;
+    }
+
+    .form {
+        padding: 32px 0px 48px 0px;
+    }
+
+    .accept {
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    .policies {
+        width: 100%;
+        height: 35px;
+        margin-top: 0px;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .arrow {
+        top: 60px;
+        left: 16px;
+    }
+
+    .headlineSectionDiv {
+        padding-top: 0px;
+    }
+
+    .headlineSection {
+        gap: 5px;
+    }
+
+    .headlineSignup {
+        font-size: 47px;
+    }
+
+    .buttonSignup {
+        width: 180px;
+        height: 51px;
+        padding: 4px 0px 4px 0px;
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    .signupButtonDiv {
+        margin-top: 20px;
+    }
+}
